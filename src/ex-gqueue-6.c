@@ -30,5 +30,6 @@ int main(int argc, char **argv) {
   g_queue_sort(q, (GCompareDataFunc)sorter, NULL);
   printf("\nSorted queue: ");
   g_queue_foreach(q, (GFunc)prt, NULL);
+  printf("\n");
   g_queue_free(q);
 }

@@ -18,5 +18,6 @@ int main(int argc, char **argv) {
   g_queue_delete_link(q, jim_link);
   printf("Now the queue is: ");
   g_queue_foreach(q, (GFunc)printf, NULL);
+  printf("\n");
   g_queue_free(q);
 }

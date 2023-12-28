@@ -15,6 +15,7 @@ int main(int argc, char **argv) {
   g_queue_reverse(new_q);
   printf("\nNewly copied and re‑reversed queue is: ");
   g_queue_foreach(new_q, (GFunc)printf, NULL);
+  printf("\n");
   g_queue_free(q);
   g_queue_free(new_q);
 }

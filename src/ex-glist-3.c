@@ -15,5 +15,6 @@ int main(int argc, char **argv) {
   list = g_list_delete_link(list, g_list_nth(list, 1));
   printf("\nHere's the list after the delete_link call: ");
   g_list_foreach(list, (GFunc)printf, NULL);
+  printf("\n");
   g_list_free(list);
 }

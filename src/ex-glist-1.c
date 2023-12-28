@@ -16,5 +16,6 @@ int main(int argc, char **argv) {
   list = g_list_reverse(list);
   printf("\nAfter reversal: ");
   g_list_foreach(list, (GFunc)printf, NULL);
+  printf("\n");
   g_list_free(list);
 }

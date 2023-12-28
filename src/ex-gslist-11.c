@@ -12,5 +12,6 @@ int main(int argc, char **argv) {
   list = g_slist_insert_sorted(list, "Denver ", (GCompareFunc)g_ascii_strcasecmp);
   printf("After inserting 'Denver', here's the final list:\n");
   g_slist_foreach(list, (GFunc)printf, NULL);
+  printf("\n");
   g_slist_free(list);
 }
