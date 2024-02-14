@@ -1,7 +1,7 @@
 #include <glib.h>
 #include <stdio.h>
 
-int main(int argc, char **argv) {
+int main(void) {
   GSList *list = g_slist_append(NULL, "Anaheim "), *iterator = NULL;
   list = g_slist_append(list, "Elkton ");
   printf("Before inserting 'Boston', second item is: '%s'\n", (char *)g_slist_nth(list, 1)->data);

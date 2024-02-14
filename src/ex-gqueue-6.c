@@ -19,7 +19,7 @@ gint sorter(gconstpointer a, gconstpointer b, gpointer data) {
   return ((Task *)a)->priority - ((Task *)b)->priority;
 }
 
-int main(int argc, char **argv) {
+int main(void) {
   GQueue *q = g_queue_new();
   g_queue_push_tail(q, make_task("Reboot server", 2));
   g_queue_push_tail(q, make_task("Pull cable", 2));

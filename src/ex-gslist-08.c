@@ -7,7 +7,7 @@ void print_iterator(gpointer item, gpointer prefix) {
 
 void print_iterator_short(gpointer item) { printf("%s\n", (char *)item); }
 
-int main(int argc, char **argv) {
+int main(void) {
   GSList *list = g_slist_append(NULL, g_strdup("first"));
   list = g_slist_append(list, g_strdup("second"));
   list = g_slist_append(list, g_strdup("third"));

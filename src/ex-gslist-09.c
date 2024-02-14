@@ -5,7 +5,7 @@ gint my_comparator(gconstpointer item1, gconstpointer item2) {
   return g_ascii_strcasecmp(item1, item2);
 }
 
-int main(int argc, char **argv) {
+int main(void) {
   GSList *list = g_slist_append(NULL, "Chicago");
   list = g_slist_append(list, "Boston");
   list = g_slist_append(list, "Albany");

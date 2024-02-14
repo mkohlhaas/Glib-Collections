@@ -7,7 +7,7 @@ void key_destroyed(gpointer data) {
   printf("Got a key destroy call for %s\n", data == texas_1 ? "texas_1" : "texas_2");
 }
 
-int main(int argc, char **argv) {
+int main(void) {
   GHashTable *hash =
       g_hash_table_new_full(g_str_hash, g_str_equal, (GDestroyNotify)key_destroyed, NULL);
   texas_1 = g_strdup("Texas");

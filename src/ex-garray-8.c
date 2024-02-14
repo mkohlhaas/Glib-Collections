@@ -1,7 +1,7 @@
 #include <glib.h>
 #include <stdio.h>
 
-int main(int argc, char **argv) {
+int main(void) {
   GByteArray *a = g_byte_array_new();
   guint8 x = 0xFF;
   g_byte_array_append(a, &x, sizeof(x));

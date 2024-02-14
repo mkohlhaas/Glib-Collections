@@ -9,7 +9,7 @@ gboolean finder(gpointer key, gpointer value, gpointer user_data) {
   return (GPOINTER_TO_INT(key) + GPOINTER_TO_INT(value)) == 42;
 }
 
-int main(int argc, char **argv) {
+int main(void) {
   GHashTable *hash =
       g_hash_table_new_full(g_direct_hash, g_direct_equal, NULL, (GDestroyNotify)value_destroyed);
   g_hash_table_insert(hash, GINT_TO_POINTER(6), GINT_TO_POINTER(36));

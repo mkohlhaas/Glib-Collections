@@ -5,7 +5,7 @@ void iterator(gpointer key, gpointer value, gpointer user_data) {
   printf(user_data, *(gint *)key, value);
 }
 
-int main(int argc, char **argv) {
+int main(void) {
   GHashTable *hash = g_hash_table_new(g_int_hash, g_int_equal);
   gint *k_one = g_new(gint, 1), *k_two = g_new(gint, 1), *k_three = g_new(gint, 1);
   *k_one = 1, *k_two = 2, *k_three = 3;

@@ -1,7 +1,7 @@
 #include <glib.h>
 #include <stdio.h>
 
-int main(int argc, char **argv) {
+int main(void) {
   GTree *t = g_tree_new((GCompareFunc)g_ascii_strcasecmp);
   g_tree_insert(t, "c", "Chicago");
   printf("The tree height is %d because there's only one node\n", g_tree_height(t));

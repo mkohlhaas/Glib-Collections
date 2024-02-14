@@ -3,7 +3,7 @@
 
 gint my_finder(gconstpointer item) { return g_ascii_strcasecmp(item, "second"); }
 
-int main(int argc, char **argv) {
+int main(void) {
   GSList *list = g_slist_append(NULL, "first");
   list = g_slist_append(list, "second");
   list = g_slist_append(list, "third");

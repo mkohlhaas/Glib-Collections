@@ -8,7 +8,7 @@ void prt(GArray *a) {
   printf("\n");
 }
 
-int main(int argc, char **argv) {
+int main(void) {
   GArray *a = g_array_new(FALSE, FALSE, sizeof(int));
   printf("Array is empty, so appending some values\n");
   int x[2] = {4, 5};

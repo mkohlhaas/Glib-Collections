@@ -9,7 +9,7 @@ gint finder(gpointer key, gpointer user_data) {
   return (len < 3) ? 1 : -1;
 }
 
-int main(int argc, char **argv) {
+int main(void) {
   GTree *t = g_tree_new((GCompareFunc)g_ascii_strcasecmp);
   g_tree_insert(t, "dddd", "Detroit");
   g_tree_insert(t, "a", "Annandale");

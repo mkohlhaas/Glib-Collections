@@ -6,7 +6,7 @@ gboolean iter(GNode *n, gpointer data) {
   return FALSE;
 }
 
-int main(int argc, char **argv) {
+int main(void) {
   GNode *root = g_node_new("Atlanta");
   g_node_append(root, g_node_new("Detroit"));
   GNode *portland = g_node_prepend(root, g_node_new("Portland"));

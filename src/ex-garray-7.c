@@ -1,7 +1,7 @@
 #include <glib.h>
 #include <stdio.h>
 
-int main(int argc, char **argv) {
+int main(void) {
   GPtrArray *a = g_ptr_array_new();
   g_ptr_array_add(a, g_strdup("hello "));
   g_ptr_array_add(a, g_strdup("again "));

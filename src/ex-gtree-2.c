@@ -5,7 +5,7 @@ void key_d(gpointer data) { printf("Key %s destroyed\n", (char *)data); }
 
 void value_d(gpointer data) { printf("Value %s destroyed\n", (char *)data); }
 
-int main(int argc, char **argv) {
+int main(void) {
   GTree *t = g_tree_new_full((GCompareDataFunc)g_ascii_strcasecmp, NULL, (GDestroyNotify)key_d,
                              (GDestroyNotify)value_d);
   g_tree_insert(t, "c", "Chicago");

@@ -1,7 +1,7 @@
 #include <glib.h>
 #include <stdio.h>
 
-int main(int argc, char **argv) {
+int main(void) {
   GSList *list = NULL, *iterator = NULL;
   list = g_slist_append(list, "first");
   list = g_slist_append(list, "second");

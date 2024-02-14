@@ -1,7 +1,7 @@
 #include <glib.h>
 #include <stdio.h>
 
-int main(int argc, char **argv) {
+int main(void) {
   GQueue *q = g_queue_new();
   printf("Is the queue empty?  %s, adding folks\n", g_queue_is_empty(q) ? "Yes" : "No");
   g_queue_push_tail(q, "Alice");

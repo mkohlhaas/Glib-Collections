@@ -1,7 +1,7 @@
 #include <glib.h>
 #include <stdio.h>
 
-int main(int argc, char **argv) {
+int main(void) {
   GQueue *q = g_queue_new();
   g_queue_push_tail(q, "Alice ");
   g_queue_push_tail(q, "Bob ");

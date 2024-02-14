@@ -1,7 +1,7 @@
 #include <glib.h>
 #include <stdio.h>
 
-int main(int argc, char **argv) {
+int main(void) {
   GSList *list = NULL;
   printf("The list is now %d items long\n", g_slist_length(list));
   list = g_slist_append(list, "first");

@@ -1,7 +1,7 @@
 #include <glib.h>
 #include <stdio.h>
 
-int main(int argc, char **argv) {
+int main(void) {
   GArray *a = g_array_new(FALSE, FALSE, sizeof(char *));
   char *first = "hello", *second = "there", *third = "world";
   g_array_append_val(a, first);

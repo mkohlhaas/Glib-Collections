@@ -1,7 +1,7 @@
 #include <glib.h>
 #include <stdio.h>
 
-int main(int argc, char **argv) {
+int main(void) {
   GArray *a = g_array_sized_new(TRUE, TRUE, sizeof(int), 16);
   printf("Array preallocation is hidden, so array size == %d\n", a->len);
   printf("Array was init'd to zeros, so 3rd item is = %d\n", g_array_index(a, int, 2));

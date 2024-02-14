@@ -6,7 +6,7 @@ typedef struct {
   int shoe_size;
 } Person;
 
-int main(int argc, char **argv) {
+int main(void) {
   GSList *list = NULL;
   Person *tom = (Person *)malloc(sizeof(Person));
   tom->name = "Tom";

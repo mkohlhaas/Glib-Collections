@@ -12,7 +12,7 @@ void destroy(gpointer key, gpointer value, gpointer data) {
   g_slist_free(value);
 }
 
-int main(int argc, char **argv) {
+int main(void) {
   GHashTable *hash = g_hash_table_new(g_str_hash, g_str_equal);
   g_hash_table_insert(hash, "Texas", g_slist_append(g_hash_table_lookup(hash, "Texas"), "Austin "));
   g_hash_table_insert(hash, "Texas",

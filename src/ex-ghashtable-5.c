@@ -5,7 +5,7 @@ gboolean wide_open(gpointer key, gpointer value, gpointer user_data) { return TR
 
 void key_destroyed(gpointer data) { printf("Got a GDestroyNotify callback\n"); }
 
-int main(int argc, char **argv) {
+int main(void) {
   GHashTable *hash = g_hash_table_new_full(g_str_hash, g_str_equal, (GDestroyNotify)key_destroyed,
                                            (GDestroyNotify)key_destroyed);
   g_hash_table_insert(hash, "Texas", "Austin");

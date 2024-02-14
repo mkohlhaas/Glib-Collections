@@ -1,7 +1,7 @@
 #include <glib.h>
 #include <stdio.h>
 
-int main(int argc, char **argv) {
+int main(void) {
   GList *list = g_list_append(NULL, "Austin ");
   list = g_list_append(list, "Bowie ");
   list = g_list_append(list, "Bowie ");

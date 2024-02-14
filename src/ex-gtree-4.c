@@ -10,7 +10,7 @@ gboolean iter_some(gpointer key, gpointer value, gpointer data) {
   printf("%s, %s\n", (char *)key, (char *)value);
   return g_ascii_strcasecmp(key, "b") == 0;
 }
-int main(int argc, char **argv) {
+int main(void) {
   GTree *t = g_tree_new((GCompareFunc)g_ascii_strcasecmp);
   g_tree_insert(t, "d", "Detroit");
   g_tree_insert(t, "a", "Atlanta");
